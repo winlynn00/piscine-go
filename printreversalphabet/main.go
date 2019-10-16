@@ -3,8 +3,10 @@ package main
 import "github.com/01-edu/z01"
 
 func main() {
-	for i := 122; i <= 97; i-- {
-		z01.PrintRune(rune(i))
+	for i := 'z'; i >= 'a'; i-- {
+		z01.PrintRune(i)
+		if i == 'a' {
+			z01.PrintRune('\n')
+		}
 	}
-	z01.PrintRune(rune(10))
 }
