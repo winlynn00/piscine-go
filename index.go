@@ -9,7 +9,7 @@ func Index(s string, toFind string) int {
 				startIndex := 0
 				for j := 0; j < StrLen(toFind); j++ {
 					if s[i] == toFind[j] && j == 0 {
-						startIndex = i 
+						startIndex = i
 					}
 					if s[i] == toFind[j] {
 						count++
@@ -17,7 +17,7 @@ func Index(s string, toFind string) int {
 					}
 				}
 				if count == StrLen(toFind) {
-					index = startIndex 
+					index = startIndex
 					break
 				}
 			}
