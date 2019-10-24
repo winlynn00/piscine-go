@@ -8,7 +8,7 @@ func Index(s string, toFind string) int {
 		length++
 	}
 	for index, str := range sToRune {
-		if length > 0 && str == toFindToRune[0] {
+		if length > 0 && str == toFindToRune['0'] {
 			return index
 		}
 	}
